@@ -19,7 +19,9 @@ Notifies the user on success or errors
 - [ ] Document/Automate the setup
 - [ ] Make into terminal command and add it to npm
 - [ ] Use Typescript
+- [ ] Add tests
 
 
 ### References
-+ https://apple.stackexchange.com/a/8092/55902
++ [(Stack Overflow Answer) How to run Applescript on Disk mount](https://apple.stackexchange.com/a/8092/55902)
++ [Git branching strategy](https://nvie.com/posts/a-successful-git-branching-model/)

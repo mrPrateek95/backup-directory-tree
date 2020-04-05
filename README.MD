@@ -11,15 +11,7 @@ Notifies the user on success or errors
 + [terminal-notifier](https://github.com/julienXX/terminal-notifier) installed (temporary dependency)
 
 ## To-do
-- [ ] Remove terminal-notifier as a dependency
-- [ ] Add logic to check if terminal-notifier is installed (Optional if I can remove this dependency)
-- [ ] Better logging for error messages
-- [ ] Save the data to a DB
-- [ ] Add automator workflow to source control
-- [ ] Document/Automate the setup
-- [ ] Make into terminal command and add it to npm
-- [ ] Use Typescript
-- [ ] Add tests
+[Tasks](https://github.com/mrPrateek95/backup-directory-tree/projects/1)
 
 
 ### References

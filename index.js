@@ -10,25 +10,20 @@ var tag = require('osx-tag');
 const volumesPath = '/Volumes';
 const flagToBackupTag = '__hdd_backup_dirtree';
 
-const VolumesToBackup = ["Anime | Comics"];
-
 const errorNotiicationMessage = 'Error while backing up directory tree';
 
-fs.readdir(volumesPath, (err, files) => {
+fs.readdir(volumesPath, async (err, files) => {
     if (err) {
         ErrorHandling(error)
     }
-    files.forEach(file => {
-        try {
-            if(VolumesToBackup.includes(file))
-            {
-                const fullPath = path.join(volumesPath, file);
-                BackupDirectoryStructure(fullPath);
-            }
-        } catch (error) {
-            ErrorHandling(error)
+    for (const file of files) {
+        const fullPath = path.join(volumesPath, file);
+        const osxTags = await GetOSXTags(fullPath)
+        if(osxTags.includes(flagToBackupTag))
+        {
+            BackupDirectoryStructure(fullPath)
         }
-    });
+    }
 });
 
 const BackupDirectoryStructure = function (p) {
@@ -52,7 +47,6 @@ const GetOSXTags = function (p) {
                 if (err) {
                     ErrorHandling(error);
                 }
-                console.log(p)
                 resolve(tags)
             });
         } catch (error) {

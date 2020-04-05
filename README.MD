@@ -1,4 +1,4 @@
-# Backup Directory Tree
+# backup-directory-tree
 
 Makes a copy of the directory tree when an external HDD is connected
 

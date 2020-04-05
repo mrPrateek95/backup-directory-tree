@@ -117,3 +117,4 @@ dist
 # HD Backups
 
 dirTreeBackups/
+.DS_Store

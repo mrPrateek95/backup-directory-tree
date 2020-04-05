@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "directory-tree": "^2.2.4",
-    "osx-tag": "^0.4.1"
+    "osx-tag": "^0.4.1",
+    "shelljs": "^0.8.3"
   }
 }

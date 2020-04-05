@@ -18,6 +18,7 @@ Notifies the user on success or errors
 - [ ] Add automator workflow to source control
 - [ ] Document/Automate the setup
 - [ ] Make into terminal command and add it to npm
+- [ ] Use Typescript
 
 
 ### References
